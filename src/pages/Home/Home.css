@@ -1,0 +1,10 @@
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page_editor {
+  margin-bottom: 12px;
+}

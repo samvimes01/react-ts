@@ -1,0 +1,19 @@
+.inner-link, .inner-link:visited {
+  font-size: 1rem;
+  color: orange;
+  text-decoration: none;
+}
+
+.inner-link {
+  transition: transform .2s ease-in-out;
+}
+
+.inner-link:hover {
+  transform: scale(1.1);
+  color: yellow;
+}
+
+.inner-link:active {
+  transform: scale(1.0);
+  color: orangered;
+}

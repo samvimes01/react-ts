@@ -1,26 +1,25 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
-import logo from './logo.svg';
+import { Router, RouteComponentProps } from '@reach/router';
+
+import Home from './pages/Home/Home';
+import Layout from './pages/Layout/Layout';
+import { TextStoreProvider } from './contextStore/TextStoreProvider';
+
 import './App.css';
+
+const HomePage = (props: RouteComponentProps): JSX.Element => <Home />;
+const LayoutPage = (props: RouteComponentProps): JSX.Element => <Layout />;
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TextStoreProvider>
+      <Router className="app">
+        <HomePage path="/" />
+        <LayoutPage path="/layout" />
+      </Router>
+    </TextStoreProvider>
   );
-}
+};
 
 export default App;

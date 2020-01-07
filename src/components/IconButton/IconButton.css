@@ -1,0 +1,27 @@
+.icon-btn {
+  margin: 6px;
+  transition: all .2s ease-in-out;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+.icon-btn:active {
+  transform: scale(1.0);
+}
+
+.circle-btn {
+  cursor: pointer;
+  fill: orange;
+  stroke: orange;
+}
+
+.circle-btn:hover {
+  fill: yellow;
+  stroke: yellow;
+}
+
+.circle-btn:active {
+  fill: orangered;
+  stroke: orangered;
+}
