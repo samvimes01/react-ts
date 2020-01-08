@@ -3,9 +3,12 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  max-width: 720px;
 }
 
 .layout_layout-buttons {
   margin:  0 12px 12px;
+}
+
+.layout_editor-items {
+  flex-wrap: wrap;
 }
